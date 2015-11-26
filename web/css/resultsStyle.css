@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+
+    position: relative;
+    z-index: 100;
+}
+
+ul {
+    position: relative;
+    z-index: 100;
+}
+
+#input {
+    width: 400px;
+    height: 32px;
+}
+
+#results {
+    width: 400px;
+    margin-left: 63px;
+}
+
+#animate {
+    width: 400px;
+    border: 2px solid black;
+}
+
+#top {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    transform: translate(-5%, 0%);
+    z-index: 500;
+}
+
+#output {
+    position: absolute;
+    top: 180px;
+    left: 450px;
+}
+
+#a {
+    font-family: "Monotype Corsiva";
+    font-size: 25px;
+}
+
+#ref {
+    text-decoration: none;
+    position: absolute;
+    top: 50px;
+    left: 400px;
+}
+
+#p {
+    font-family: "Monotype Corsiva";
+    font-size: 16px;
+}
+
+#bookInner {
+    border-radius: 0px 20px 0px 20px;
+    padding: 20px;
+    background: rgb(34,34,34); /* for IE */
+    background: rgba(34,34,34,0.75);
+    color: white;
+}
+
+#book {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shadow {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2) inset, 0 -1px 0 rgba(0,0,0,.05) inset;
+}
+.shadow:hover {  /* при наведении курсора мышки */
+    box-shadow: 0 0 0 1px #7eb4ea inset, 0 1px 2px rgba(0,0,0,.2) inset;
+}
+.shadow:focus {  /* при фокусе, когда поле input активно */
+    outline: none;
+    box-shadow: 0 0 0 1px #7eb4ea inset, 0 1px 2px rgba(0,0,0,.2) inset, 0 0 4px rgba(35,146,243,.5);
+    transition: .2s linear;
+}
+.shadow::-moz-placeholder {
+    color: #999999;
+}
+.shadow::-webkit-placeholder {
+    color: #999999;
+}
+.shadow::placeholder {
+    color: #999999;
+}
+
+
+
+[class^="dva"] {
+    padding: 0em;
+    background: rgba(34, 34, 34, 0.75);
+    color: white;
+    transition: .3s;
+}
+.dva2 {
+    box-shadow: inset 0 0 0 2em rgba(255,255,255,.5);
+}
+.dva3 {
+    box-shadow: inset 0 1px 3px 1px rgba(0,0,0,0), inset 0 0 0 2em rgba(255,255,255,.5);
+}
+[class^="dva"]:hover {
+    box-shadow: inset 0 1px 3px 1px rgba(0,0,0,.5), inset 0 0 0 2em rgba(255,255,255,.5);
+}
+
+
+
+.button {
+    border: 1px solid #ffffff;
+    margin-bottom: 3px;
+    background: #fcfeff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#fcfeff));
+    background: -webkit-linear-gradient(top, #ffffff, #fcfeff);
+    background: -moz-linear-gradient(top, #ffffff, #fcfeff);
+    background: -ms-linear-gradient(top, #ffffff, #fcfeff);
+    background: -o-linear-gradient(top, #ffffff, #fcfeff);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, #fcfeff 100%);
+    padding: 5.5px 11px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #ffffff 0 1px 0;
+    color: #080808;
+    font-size: 14px;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.button:hover {
+    border: 1px solid #a3a9ad;
+    text-shadow: #ffffff 0 1px 0;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+    color: #000000;
+}
+.button:active {
+    text-shadow: #ffffff 0 1px 0;
+    border: 1px solid #a7a8b0;
+    background: #3cb0fd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#afafb8), to(#ffffff));
+    background: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd 0%, #3498db 100%);
+    color: #ffffff;
+}
+
+
+
+.btn, #contact, #showPopUp {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2px;
+    font-family: Georgia;
+    color: #fafafa;
+    font-size: 15px;
+    padding: 6px 20px 8px 20px;
+    text-decoration: none;
+}
+
+.btn:hover, #contact:hover, #showPopUp:hover  {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+
+
+
+#formCancelBtn {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+    padding: 9px 18px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #ffffff 0 1px 0;
+    color: #000000;
+    font-size: 12px;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+#formCancelBtn:hover {
+    border: 1px solid #000000;
+    text-shadow: #ffffff 0 1px 0;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+    color: #000000;
+}
+#formCancelBtn:active {
+    text-shadow: #ffffff 0 1px 0;
+    border: 1px solid #fa0000;
+    background: #f01616;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ab1313), to(#ffffff));
+    background: -webkit-linear-gradient(top, #ab1313, #f01616);
+    background: -moz-linear-gradient(top, #ab1313, #f01616);
+    background: -ms-linear-gradient(top, #ab1313, #f01616);
+    background: -o-linear-gradient(top, #ab1313, #f01616);
+    background-image: -ms-linear-gradient(top, #ab1313 0%, #f01616 100%);
+    color: #fff;
+}
+
+
+
+
+
+
+.formAddBtn {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+    padding: 9px 18px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #ffffff 0 1px 0;
+    color: #000000;
+    font-size: 12px;
+    font-family: helvetica, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.formAddBtn:hover {
+    border: 1px solid #000000;
+    text-shadow: #ffffff 0 1px 0;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+    color: #000000;
+}
+.formAddBtn:active {
+    text-shadow: #ffffff 0 1px 0;
+    border: 1px solid #27e84e;
+    background: #65d683;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2edb25), to(#ffffff));
+    background: -webkit-linear-gradient(top, #2edb25, #65d683);
+    background: -moz-linear-gradient(top, #2edb25, #65d683);
+    background: -ms-linear-gradient(top, #2edb25, #65d683);
+    background: -o-linear-gradient(top, #2edb25, #65d683);
+    background-image: -ms-linear-gradient(top, #2edb25 0%, #65d683 100%);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+a.selected {
+    background-color:#1F75CC;
+    color:white;
+    z-index:100;
+}
+
+.messagepop {
+    background-color:#FFFFFF;
+    border:1px solid #999999;
+    cursor:default;
+    display:none;
+    margin-top: 15px;
+    position:absolute;
+    text-align:left;
+    width:394px;
+    z-index:50;
+    padding: 25px 25px 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+.messagepop p, .messagepop.div {
+    border-bottom: 1px solid #EFEFEF;
+    margin: 8px 0;
+    padding-bottom: 8px;
+}
+
+
+#b {
+    margin: 0; /* Убираем отступы */
+    height: 100%; /* Высота страницы */
+    background: url(8.jpg); /* Параметры фона */
+    background-size: cover; /* Фон занимает всю доступную площадь */
+}

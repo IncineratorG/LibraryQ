@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>Query</servlet-name>
+        <servlet-class>QueryExecutor</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Query</servlet-name>
+        <url-pattern>/qe</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet</servlet-name>
+        <url-pattern>/s</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PopUpMenusHandler</servlet-name>
+        <servlet-class>PopUpMenusHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PopUpMenusHandler</servlet-name>
+        <url-pattern>/menuHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddRemoveModify</servlet-name>
+        <servlet-class>AddRemoveModify</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddRemoveModify</servlet-name>
+        <url-pattern>/AddRemoveModify</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Delete</servlet-name>
+        <servlet-class>Delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Delete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+</web-app>

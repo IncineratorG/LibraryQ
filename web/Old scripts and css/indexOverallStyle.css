@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0; /* Убираем отступы */
+    height: 100%; /* Высота страницы */
+    background: url(8.jpg); /* Параметры фона */
+    background-size: cover; /* Фон занимает всю доступную площадь */
+}
